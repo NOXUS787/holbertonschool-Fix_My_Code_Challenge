@@ -10,3 +10,6 @@ Fixing existing code instead of rewriting it.
   `10` printed a 16x16 square. It is now parsed as base 10.
 - `2-sort.rb`: sort fix. Integer arguments are now sorted numerically in
   ascending order (non-integer arguments are ignored).
+- `3-user.py`: user password fix. The setter now assigns to `__password`
+  (it wrote to `_password`), and `is_valid_password` compares lowercase MD5
+  hashes (it compared against an uppercase one).
