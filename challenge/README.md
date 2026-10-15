@@ -13,3 +13,5 @@ Fixing existing code instead of rewriting it.
 - `3-user.py`: user password fix. The setter now assigns to `__password`
   (it wrote to `_password`), and `is_valid_password` compares lowercase MD5
   hashes (it compared against an uppercase one).
+- `4-delete_dnodeint/`: doubly linked list fix. Deleting a node now relinks
+  the neighbouring `next` pointer instead of overwriting `prev`.
